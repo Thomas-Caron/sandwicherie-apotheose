@@ -8,7 +8,7 @@ import { GET_COMMAND, CHANGE_STATUS, saveCommand, changeStatus } from '../action
 const commandMiddleware = (store) => (next) => (action) => {
   switch (action.type) {
     case GET_COMMAND:
-      axios.get('http://ec2-54-160-78-162.compute-1.amazonaws.com/api/api/order')
+      axios.get('http://ec2-100-26-151-181.compute-1.amazonaws.com/api/api/order')
         .then((response) => {
           store.dispatch(saveCommand(response.data));
         })
@@ -19,7 +19,7 @@ const commandMiddleware = (store) => (next) => (action) => {
       case CHANGE_STATUS:
         const state = store.getState();
         const { idCommand } = state.command;
-        axios.put(`http://ec2-54-160-78-162.compute-1.amazonaws.com/api/api/order/${idCommand}`, {
+        axios.put(`http://ec2-100-26-151-181.compute-1.amazonaws.com/api/api/order/${idCommand}`, {
           status: 2,
         })
           .then((response) => {

@@ -11,7 +11,7 @@ const logMiddleware = (store) => (next) => (action) => {
             const state = store.getState();
             const { username, password } = state.login;
 
-            axios.post('http://ec2-54-160-78-162.compute-1.amazonaws.com/api/api/login', {
+            axios.post('http://ec2-100-26-151-181.compute-1.amazonaws.com/api/api/login', {
                 username,
                 password
             })
