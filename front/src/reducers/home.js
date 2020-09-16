@@ -10,7 +10,7 @@ export const initialState = {
     imagePresentation: [
         {
             id: 1,
-            src: 'https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/p960x960/19055885_1791217924523101_5664044721417903390_o.jpg?_nc_cat=104&_nc_sid=dd7718&_nc_ohc=_gVKvrncdyIAX8P1Vu0&_nc_ht=scontent-cdg2-1.xx&_nc_tp=6&oh=c842bb3a7b01d32886daf8352b3c0ee1&oe=5F3E4316',
+            src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSMXPXqvOMEmHNA1iUTtiIJBwykWQMnleGfVw&usqp=CAU',
             alt: 'restaurant'
         }
     ],
